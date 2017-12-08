@@ -1,0 +1,9 @@
+.faq {
+  &__question {
+    margin-top: rem(20);
+
+    @include breakpoint(large) {
+      margin-top: rem(35);
+    }
+  }
+}

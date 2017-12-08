@@ -1,0 +1,79 @@
+.cta {
+  &__button {
+    margin-top: rem(15);
+
+    @include breakpoint(medium) {
+      margin-top: rem(20);
+    }
+
+    @include breakpoint(large) {
+      margin-top: rem(40);
+    }
+
+    .store-link {
+      display: inline-block;
+      margin-top: rem(15);
+
+      @include breakpoint(medium) {
+        margin-top: 0;
+      }
+    }
+  }
+
+  .medium {
+    margin: rem(25) 0 rem(20);
+    display: block;
+
+    &:after {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 50px;
+      left: 50%;
+      margin-left: -25px;
+      bottom: 0;
+      height: 1px;
+      background: rgba($color-gray--light, .35);
+    }
+
+    @include breakpoint(medium) {
+      margin-top: rem(30);
+      &:before, &:after {
+        position: absolute;
+        bottom: rem(30);
+        left: 0;
+        display: block;
+        content: "";
+        width: 10%;
+        height: 1px;
+        background: rgba($color-gray--light, .35);
+      }
+
+      &:after {
+        left: auto;
+        right: 0;
+      }
+    }
+
+    @include breakpoint(large) {
+      margin-top: rem(50);
+      &:before, &:after {
+        width: 20%;
+      }
+    }
+  }
+
+  .input-field, .input-submit {
+    margin-top: rem(15);
+
+    @include breakpoint(large) {
+      margin-top: 0;
+    }
+  }
+
+  .input-field {
+    @include breakpoint(large) {
+      margin-right: rem(15);
+    }
+  }
+}

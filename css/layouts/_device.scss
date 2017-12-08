@@ -1,0 +1,129 @@
+.device {
+  .hero {
+    &__content {
+      padding-top: rem(60);
+      padding-bottom: rem(40);
+      text-align: center;
+
+      @include breakpoint(medium) {
+        padding-top: rem(75);
+        padding-bottom: rem(50);
+      }
+
+      @include breakpoint(large) {
+        padding-top: rem(90);
+        padding-bottom: rem(80);
+        text-align: left;
+      }
+
+      .sub-heading {
+        max-width: 95%;
+        margin: rem(10) 0 rem(50);
+
+        @include breakpoint(large) {
+          max-width: 60%;
+        }
+      }
+
+      .separator {
+        margin: rem(25) auto;
+
+        @include breakpoint(medium) {
+          margin: rem(35) auto;
+        }
+
+        @include breakpoint(large) {
+          margin: rem(50) 0;
+        }
+      }
+
+      .button--hollow {
+        @include breakpoint(medium) {
+          margin-left: rem(30);
+        }
+      }
+
+      .input-field {
+        margin-bottom: rem(10);
+
+        @include breakpoint(large) {
+          margin-bottom: 0;
+          margin-right: rem(10);
+        }
+      }
+    }
+  }
+
+  .full-bg {
+    .logotypes {
+      @extend %reset-list;
+      width: 100%;
+
+      li {
+        display: block;
+        float: left;
+        width: 100%;
+        margin: rem(15) 0;
+
+        @include breakpoint(medium) {
+          width: 25%;
+          margin: 0;
+        }
+      }
+    }
+  }
+
+  .icon-box {
+    &--device {
+
+      @include breakpoint(medium) {
+        min-height: rem(1000);
+      }
+
+      @include breakpoint(large) {
+        min-height: rem(780);
+      }
+
+      @include breakpoint(xlarge) {
+        min-height: rem(820);
+      }
+
+      .heading {
+        @include breakpoint(large) {
+          margin-bottom: rem(70);
+        }
+
+        @include breakpoint(xlarge) {
+          margin-bottom: rem(100);
+        }
+      }
+
+      &__icon {
+        .icon {
+          color: $color-blue;
+        }
+      }
+
+      &__image {
+        @include breakpoint(medium) {
+          margin: 0;
+          position: absolute;
+          top: rem(350);
+          left: - rem(80);
+        }
+
+        @include breakpoint(large) {
+          top: rem(250);
+          max-width: 350px;
+          left: 50%;
+          margin-left: -175px;
+        }
+
+        @include breakpoint(xlarge) {
+          max-width: none;
+          margin-left: -195px;
+        }
+      }
+    }
+  }
+}

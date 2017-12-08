@@ -1,0 +1,150 @@
+// clearfix
+%clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+.clearfix {
+  @extend %clearfix;
+}
+
+%container {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+
+  @include breakpoint(small) {
+  	width: 540px;
+    max-width: 100%;
+  }
+
+  @include breakpoint(medium) {
+    width: 720px;
+    max-width: 100%;
+  }
+
+  @include breakpoint(large) {
+    width: 960px;
+    max-width: 100%;
+  }
+
+  @include breakpoint(xlarge) {
+  	width: 1140px;
+    max-width: 100%;
+  }
+}
+
+%padded {
+  padding-top: rem(40);
+  padding-bottom: rem(40);
+
+  @include breakpoint(medium) {
+    padding-top: rem(65);
+    padding-bottom: rem(65);
+  }
+
+  @include breakpoint(large) {
+    padding-top: rem(80);
+    padding-bottom: rem(80);
+  }
+}
+
+%padded-top {
+  padding-top: rem(40);
+
+  @include breakpoint(medium) {
+    padding-top: rem(65);
+
+  }
+
+  @include breakpoint(large) {
+    padding-top: rem(80);
+  }
+}
+
+%padded-bottom {
+  padding-bottom: rem(40);
+
+  @include breakpoint(medium) {
+    padding-bottom: rem(65);
+  }
+
+  @include breakpoint(large) {
+    padding-bottom: rem(80);
+  }
+}
+
+.padded {
+  @extend %padded;
+}
+
+.padded-top {
+  @extend %padded-top;
+}
+
+.padded-bottom {
+  @extend %padded-bottom;
+}
+
+%reset-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+%reset-button {
+  background: none;
+  border: 0;
+  outline: none;
+  color: inherit;
+  font: inherit;
+  line-height: normal;
+  overflow: visible;
+  padding: 0;
+  -webkit-appearance: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+  -webkit-box-sizing: content-box;
+     -moz-box-sizing: content-box;
+          box-sizing: content-box;
+
+  &:-moz-focus-inner {
+    border: 0;
+    padding: 0;
+  }
+}
+
+%centered {
+  text-align: center;
+}
+
+.centered {
+  @extend %centered;
+}
+
+%centered-mobile {
+  text-align: center;
+
+  @include breakpoint(large) {
+    text-align: left;
+  }
+}
+
+.centered-mobile {
+  @extend %centered-mobile;
+}
+
+%full {
+  width: 100%;
+  overflow: hidden;
+}
+
+.full {
+  @extend %full;
+}

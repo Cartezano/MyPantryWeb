@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="13px" height="22px" viewBox="0 0 13 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.1 (44463) - http://www.bohemiancoding.com/sketch -->
+    <title>chevron-right</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Concepta" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Service" transform="translate(-1239.000000, -1550.000000)" fill-rule="nonzero" fill="#202020">
+            <g id="Showcase-slider" transform="translate(-26.000000, 1374.000000)">
+                <g id="slider" transform="translate(864.000000, 141.000000)">
+                    <path d="M409.777664,46 L401.460261,54.3174036 C400.84658,54.9310847 400.84658,55.9260582 401.460261,56.5397392 C402.073942,57.1534203 403.068915,57.1534203 403.682596,56.5397392 L413.111168,47.1111678 C413.724849,46.4974868 413.724849,45.5025132 413.111168,44.8888322 L403.682596,35.4602608 C403.068915,34.8465797 402.073942,34.8465797 401.460261,35.4602608 C400.84658,36.0739418 400.84658,37.0689153 401.460261,37.6825964 L409.777664,46 Z" id="chevron-right"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

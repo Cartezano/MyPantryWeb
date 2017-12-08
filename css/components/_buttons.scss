@@ -1,0 +1,108 @@
+.button {
+	display: block;
+	cursor: pointer;
+	border: none;
+	color: $color-white;
+	background: $color-blue;
+	padding: rem(18) rem(35);
+	border-radius: $border-radius;
+  text-align: center;
+
+	transition: all .3s ease-in-out;
+
+	-webkit-appearance: none;
+
+	@include breakpoint(medium) {
+		display: inline-block;
+	}
+
+  &:visited {
+    color: $color-white;
+  }
+
+	&:hover {
+		color: $color-white;
+		background: darken($color-blue, 8);
+	}
+
+	span, i {
+		margin-right: rem(3);
+	}
+
+  &--matriarch {
+    background: $color-blue--matriarch;
+
+    &:hover {
+      background: darken($color-blue--matriarch, 5);
+    }
+  }
+
+	&--green {
+		color: $color-blue--matriarch;
+		background: $color-green;
+
+		&:hover {
+			color: $color-blue--matriarch;
+			background: $color-green--light;
+		}
+
+    &:visited {
+      color: $color-blue--matriarch;
+    }
+	}
+
+	&--red {
+		background: $color-red;
+
+		&:hover {
+			background: darken($color-red, 5);
+		}
+	}
+
+	&--white {
+		background: $color-white;
+		color: $color-black;
+
+		&:hover {
+			color: $color-black;
+			background: rgba($color-white, .95);
+		}
+
+    &:visited {
+      color: $color-black;
+    }
+	}
+
+  &--hollow {
+    padding-left: 0px;
+    padding-right: 0px;
+    background: transparent;
+    color: $color-black;
+
+    svg {
+      width: 16px;
+      margin-left: rem(5);
+      margin-bottom: - rem(7);
+    }
+
+    &:hover, &:visited {
+      background: transparent;
+      color: $color-black;
+    }
+
+    &.icon-before {
+      svg {
+        margin-left: 0;
+        margin-right: rem(5);
+      }
+    }
+
+    .invert-color & {
+      color: $color-white;
+
+      &:hover, &:visited {
+        color: $color-white;
+      }
+    }
+  }
+}

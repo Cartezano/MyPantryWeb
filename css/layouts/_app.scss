@@ -1,0 +1,94 @@
+.app {
+  .hero {
+    background-color: $color-blue;
+    background-position: right 100px;
+
+    @include breakpoint(large) {
+      background-position: right bottom;
+    }
+
+    &__content {
+      padding-top: rem(25);
+      text-align: center;
+
+      @include breakpoint(large) {
+        text-align: left;
+        padding-top: rem(60);
+      }
+
+      .logo {
+        a {
+          display: inline-block;
+
+          @include breakpoint(large) {
+            margin-top: rem(25);
+          }
+
+          @include breakpoint(xlarge) {
+            margin-top: rem(50);
+          }
+
+          svg {
+            fill: $color-white;
+            width: 47px;
+            height: 47px;
+          }
+        }
+      }
+
+      h1 {
+        @include breakpoint(large) {
+          margin-top: rem(40);
+        }
+
+        @include breakpoint(xlarge) {
+          margin-top: rem(80);
+        }
+      }
+
+      .sub-heading {
+        @extend %padded-bottom;
+        @include breakpoint(large) {
+          max-width: 90%;
+        }
+      }
+
+      .store-link {
+        display: inline-block;
+        max-width: 200px;
+
+        @include breakpoint(large) {
+          max-width: none;
+        }
+
+        &--apple {
+          margin-bottom: rem(10);
+          @include breakpoint(large) {
+            margin-bottom: 0;
+          }
+        }
+
+        &--google {
+          margin-bottom: rem(50);
+          @include breakpoint(large) {
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+
+    &__image {
+      img {
+        margin-left: - rem(38);
+
+        @include breakpoint(medium) {
+          margin-left: - rem(58);
+        }
+
+        @include breakpoint(large) {
+          margin-left: 0;
+        }
+      }
+    }
+  }
+}
